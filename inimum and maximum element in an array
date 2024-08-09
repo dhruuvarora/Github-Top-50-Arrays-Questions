@@ -1,0 +1,27 @@
+ # Find the minimum and maximum element in an array
+https://www.geeksforgeeks.org/problems/find-minimum-and-maximum-element-in-an-array4428/1
+
+class Solution {
+  public:
+    pair<long long, long long> getMinMax(vector<long long int> arr) {
+        // code here
+        
+        int n =arr.size();
+        
+        if(n==1){
+            return make_pair(arr[0],arr[0]);
+        }
+        
+        sort(arr.begin() , arr.end());
+        
+        
+        vector<int> array_pair;
+        
+        pair<long long , long long> p = make_pair(arr[0] , arr[n-1]);
+        
+        // if(n==1){
+        //     return 
+        // }
+        return p;
+    }
+};
